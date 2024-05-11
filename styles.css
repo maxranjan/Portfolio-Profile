@@ -1,0 +1,252 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Style the header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Center the header content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo */
+.logo {
+    font-size: 24px;
+}
+
+/* Style the navigation */
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.bio {
+    max-width: 900px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+h1:hover{
+    background-color: yellowgreen;
+    width: fit-content;
+    border-radius:10px;
+    padding: 5px;
+}
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+/* skilss section  */
+#skils_head{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family:'Times New Roman', Times, serif;
+    color: royalblue;
+    background-color: aquamarine;
+    background-size: cover;
+}
+.content{
+    background-color: aliceblue;
+}
+.content ul
+{
+    max-width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 2.5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.content ul p{
+    color:chocolate;
+}
+
+#project_section{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family:'Times New Roman', Times, serif;
+    color: royalblue;
+    background-color: aquamarine;
+    background-size: cover;
+}
+.content_project{
+    background-color: aliceblue;
+}
+.content_project li{
+    max-width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
+.content_project p{
+    max-width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    padding-left: 15px;
+}
+/* contact us  */
+
+.contact_box
+{
+    text-align: center;
+
+}
+#contact_us{
+    font-size: 2.5rem;
+    background-color:aquamarine;
+    color: blueviolet;
+}
+.contact_box ul li {
+    margin-top: 20px;
+    justify-content:space-around;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-left h3,
+.footer-right h3 {
+    margin-bottom: 10px;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+    .bio p{
+        font-size: 1rem;
+    }
+    .logo{
+        padding-left: 50px;
+        text-align: center;
+    }
+  
+    .content  ul{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 25px;
+        font-size: 1rem;
+    }
+    #skils_head{
+        text-align: center;
+        font-size: 1rem;
+        font-family:'Times New Roman', Times, serif;
+        color: red;
+    }
+    .content ul p {
+        font-size: 1rem;
+        font-family:'Times New Roman', Times, serif;
+    }
+
+    #project_section{
+        text-align: center;
+        font-size: 1rem;
+        font-family:'Times New Roman', Times, serif;
+        color: red;
+    }
+    .content_project li {
+        text-align: left;
+        font-size: 1rem;
+        font-family:'Times New Roman', Times, serif;
+    }
+    .content_project p {
+        text-align: left;
+        font-size: 1rem;
+        font-family:'Times New Roman', Times, serif;
+    }
+#contact_us{
+    text-align: center;
+    font-size: 1rem;
+    font-family:'Times New Roman', Times, serif;
+    color: red;
+}
+.contact_box ul li {
+        font-size: 1rem;
+        font-family:'Times New Roman', Times, serif;
+}
+
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+}
+.footer-left,
+.footer-right {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+}
