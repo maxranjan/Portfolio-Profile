@@ -1,101 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Profile</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">Portfolio Profile</h1>
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="https://www.instagram.com/max__ranjan/">Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/nicky-ranjan-8991052a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></li>
-                    <li><a href="https://github.com/maxranjan">GitHub</a></li>
-                </ul>
-            </nav>
+<html>
+  <head>
+    <title>Nicky Ranjan</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+      }
+      .w3-row-padding img {
+        margin-bottom: 12px;
+      }
+      /* Set the width of the sidebar to 120px */
+      .w3-sidebar {
+        width: 120px;
+        background: #222;
+      }
+      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+      #main {
+        margin-left: 120px;
+      }
+      /* Remove margins from "page content" on small screens */
+      @media only screen and (max-width: 600px) {
+        #main {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="w3-black">
+    <!-- Icon Bar (Sidebar - hidden on small screens) -->
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+      <!-- Avatar image in top left corner -->
+      <img src="image.jpg" style="width: 100%" />
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <i class="fa fa-home w3-xxlarge"></i>
+        <p>HOME</p>
+      </a>
+      <a
+        href="#about"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-user w3-xxlarge"></i>
+        <p>ABOUT</p>
+      </a>
+      <a
+        href="#photos"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-eye w3-xxlarge"></i>
+        <p>CERTIFICATE</p>
+        
+      </a>
+      <a
+        href="#contact"
+        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
+      >
+        <i class="fa fa-envelope w3-xxlarge"></i>
+        <p>CONTACT</p>
+      </a>
+    </nav>
+
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+      <div
+        class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"
+      >
+        <a href="#" class="w3-bar-item w3-button" style="width: 25% !important"
+          >HOME</a
+        >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >ABOUT</a
+        >
+        <a
+          href="#photos"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >ACHIEVEMENT</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          style="width: 25% !important"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div class="w3-padding-large" id="main">
+      <!-- Header/Home -->
+      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+        <h1 class="w3-jumbo">
+          <span class="w3-hide-small">I'm</span> Nicky Ranjan
+        </h1>
+        <p>Full Stack Developer</p>
+        <img
+          src="image.jpg"
+          alt="boy"
+          class="w3-image"
+          width="992"
+          height="1108"
+        />
+      </header>
+
+      <!-- About Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+        <h2 class="w3-text-light-grey">Nicky Ranjan</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+        <p>
+          I am Nicky Ranjan, I am a proficient Full Stack Developer with a strong
+          educational background and practical experience. He graduated with a
+          Bachelor of Computer Applications (BCA) from Bihar University,
+          achieving an impressive CGPA of approximately 8.4. With six months of
+          hands-on experience at AppSquadz Software Pvt Ltd, I have honed 
+          skills in both front-end and back-end development, demonstrating a
+          keen ability to build comprehensive and efficient web applications.
+        </p>
+        <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+        <p class="w3-wide">JAVA</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 90%"></div>
         </div>
-    </header>
-        <!-- Your portfolio content goes here -->
-        <div class="about-section">
-            <img src="image.jpg" alt="Your Name" class="profile-image">
-            <div class="bio">
-                <h1> Nicky Ranjan</h1>
-                <p>
-                    As an experienced <span class="highlight">[Front-End Web Developer]</span>, I bring a wealth of knowledge and expertise to the table. With a background in <span class="highlight">[Web-Development]</span>, I have honed my skills in <span class="highlight">[HTML]</span>, <span class="highlight">[CSS]</span>, and <span class="highlight">[JavaScript]</span>. Throughout my career, I have demonstrated a strong ability to <span class="highlight">[Certificate of Web-Development & javaScript]</span>, consistently delivering exceptional results.
-                </p>
-                <br>
-                <p>
-                I did my Graduation in BCA <b> (Bachelor of Computer Application) </b> From <b> Baba Saheb Bhim Rao Ambedkar Bihar University. [CGPA :- 8.42].</b> I am bassically from <b>Bihar </b> but currently 
-                living in <b>Noida.</b> My Strength is i am self Motivated and hardworking person.
-                </b> 
-                </p>
-            </div>
+        <p class="w3-wide">JAVASCRIPT</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 85%"></div>
         </div>
-        <!-- skills section  -->
-        <hr>
-        <div class="content">
-            <h2 id="skils_head">Skills <hr></h2>
-            <ul>
-                <li><b>HTML</b></li>
-                <p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.</p>
-                <li><b>CSS</b></li>
-                <p>Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML.</p>
-                <li><b>JavaScript</b></li>
-                <p>JavaScript is a programming language used to create dynamic content for websites.</p>
-                <li><b>Bootstrap</b></li>
-                <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. </p>
+        <p class="w3-wide">HTML</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 95%"></div>
+        </div>
+        <p class="w3-wide">CSS</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 95%"></div>
+        </div>
+        <p class="w3-wide">BOOTSTRAP</p>
+        <div class="w3-white">
+          <div class="w3-dark-grey" style="height: 28px; width: 75%"></div>
+        </div>
+        <br />
+        <button class="w3-button w3-light-grey w3-padding-large w3-section">
+          <i class="fa fa-download"></i><a href="https://drive.google.com/file/d/1qppRLIQk5K62EF_9IGkqhFpSRd1xBJfs/view?usp=drive_link"> My Resume</a>
+        </button>
+
+        <!-- Grid for project tables -->
+        <h3 class="w3-padding-16 w3-text-light-grey">My Projects</h3>
+        <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Restaurant Clone Website</li>
+              <li class="w3-padding-16"> <b>Restaurant Clone Website.</b> <br> In this website we have use only HTML and CSS. <br>Thankyou <br><br> <br><br><b>Click</b> <br> <a href="https://maxranjan.github.io/Max-Restaurant/">Max Restaurant</a></li>
+            </li> 
             </ul>
-            <hr>
+            
+          </div>
+
+          <div class="w3-half">
+            <ul
+              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off"
+            >
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Photography Website</li>
+              <li class="w3-padding-16"><b>Photography Website</b> <br> This is a phtographer Website. In this Website we have use HTML, CSS and JavaScript.The main Purpose of build the website is Advertisement.For Grow Own Business. <br>Thankyou <br><br><b>Click</b> <br> <a href="https://maxranjan.github.io/Photography/">Max Photography  </a>  </li>
+              </li>
+            </ul>
+          </div>
+          <!-- End Grid/Project table -->
         </div>
-        <div class="content_project">
-            <h2 id="project_section"><b>Projects</b> <hr></h2>
-                <ul>
-                    <li><b>1. Amazon Clone Website</b></li>
-                    <p>Our Amazon clone website is a demonstration of the design and layout resembling the renowned e-commerce platform Amazon. Developed entirely with HTML and CSS, this project aims to replicate the visual and navigational aspects of the original site.</p>
-                    <p> <a href="#"> Click Here to Visit Amazon Clone Website</a></p>
-                
-                    <li><b>2. Calculator</b></li>
-                    <p>Our interactive calculator is a dynamic web application crafted using HTML, CSS, and JavaScript. This project showcases the seamless integration of front-end technologies to create a user-friendly and functional calculator interface.</p>
-                    <p> <a href="https://maxranjan.github.io/Calculator/"> Click Here to Visit Calculator Web Application</a></p>
 
-                    <li><b>3. EliteCare Website</b></li>
-                    <p>Welcome to EliteCare Hospital's website, where cutting-edge technology meets compassionate care. Developed using HTML, CSS, and JavaScript, our website embodies our commitment to excellence in healthcare delivery and patient experience.</p>
-                    <p> <a href="https://maxranjan.github.io/Elitecare/">Click Here To Visit EliteCare Website</a></p>
-                </ul>
+        <!-- Testimonials -->
+        <h3 class="w3-padding-24 w3-text-light-grey">Hobbies</h3>
+        <img
+          src="Photography.jpeg"
+          alt="Avatar"
+          class="w3-left w3-circle w3-margin-right"
+          style="width: 80px"/>
+        <p>
+          <span class="w3-large w3-margin-right">Photography</span> 
+        </p>
+        <p>Capture Memories.</p>
+        <br />
 
+        <img
+          src="Travel.jpeg"
+          alt="Avatar"
+          class="w3-left w3-circle w3-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="w3-large w3-margin-right">Travel</span>
+        </p>
+        <p>Explore Every Places.</p>
+        <!-- End About Section -->
+      </div>
 
-<!-- contact-info box -->
+      <!-- Portfolio Section -->
+      <div class="w3-padding-40 w3-content" id="photos">
+        <h2 class="w3-text-light-grey">Certificate</h2>
+        <hr style="width: 200px" class="w3-opacity" />
 
-                <div class="contact_box">
-                    <h2 id="contact_us"> <hr><b> Contact Us </b> <hr></h2>
-                    <ul class="contact-info">
-                        <li>Email: <a href="mailto:nickyranjan07@gmail.com">nickyranjan07@gmail.com </a></li>
-                        <li>Phone: <a href="tel:+918298663607">+91 8298663607</a></li>
-                    </ul>
-                    <br><br>
-            </div>
-        </div>
-        <!-- footer part  -->
+        <!-- Grid for photos -->
          
-        <footer>
-            <div class="footer-container">
-                <div class="footer-left">
-                    <h3>About Us</h3>
-                    <p>A portfolio-profile is a powerful tool for professionals, freelancers, and job seekers to showcase their skills, experiences, and achievements in a concise and visually appealing manner. </p>
-                </div>
-                <div class="footer-right">
-                    <h3>Contact Us</h3>
-                    <p>Email: nickyranjan07.com</p>
-                    <p>Phone: +91 8298663607</p>
-                </div>
-            </div>
-            <p style="text-align: center; color: white;">Copyright: 2024 By - Nicky Ranjan </></p>
-        </footer>
+         <div class="w3-row-padding" style="margin: 0 -16px">
+          <div class="w3-half">
+            <img
+              src="Certificate1.jpg"
+              style="width: 100%"
+            />
+           <img
+              src="Certificate 2.png"
+              style="width: 100%"
+            />
+          </div>
 
-</body>
+           <div class="w3-half">
+            <img
+              src="Certificate 3.png"
+              style="width: 100%"
+            />
+
+            <img
+              src="Offer Letter.png"
+              style="width: 100%"
+            />
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- Contact Section -->
+      <div class="w3-padding-40 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Address</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+
+        <div class="w3-section">
+          <p>
+            <i
+              class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Vill + Post :- Chadhua, Turki, District :- Muzaffarpur, State:- Bihar (844127).
+          </p>
+          <p>
+            <i
+              class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            ></i>
+            Phone: +91 8298663607
+          </p>
+          <p>
+            <i
+              class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"
+            >
+            </i>
+            Email: nickyranjan07@gmail.com
+          </p>
+        </div>
+        <!-- <br />
+        <p>Let's get in touch. Send me a message: <b>(This Section is Under development)</b></p> -->
+
+        <!-- <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-padding-16"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button
+              class="w3-button w3-light-grey w3-padding-large"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form> -->
+        <!-- End Contact Section -->
+      </div>
+      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+        <h2 class="w3-text-light-grey">Get in Touch</h2>
+        <hr style="width: 200px" class="w3-opacity" />
+       <a href="https://wa.me/+918298663607" target="_blank"> <i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 50px;"></i></a>
+      </div>
+      
+      <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+      <footer class="w3-content w3-padding-40 w3-text-grey w3-xlarge">
+        <a href="https://www.facebook.com/nicky.ranjan.77" class="facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://github.com/maxranjan" class="github"> <i class="fa fa-github w3-hover-opacity" style="font-size:26px"> </i></a>
+        <a href="https://instagram.com/max__ranjan" class="instagram"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+        <a href="https://snapchat.com/t/t2m4m6U3" class="snapchat"> <i class="fa fa-snapchat w3-hover-opacity"></i></a>
+       <a href="https://instagram.com/max__ranjan" class="instagram"></a> <a href="https://www.linkedin.com/in/nicky-ranjan-8991052a7/?originalSubdomain=in" class="linkedin"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <p class="w3-small">
+          This website is Under development. and All Rights Reserved By Nicky Ranjan.
+        </p>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+  </body>
 </html>
