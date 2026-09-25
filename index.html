@@ -1,403 +1,460 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Nicky Ranjan</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <style>
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Montserrat", sans-serif;
-      }
-      .w3-row-padding img {
-        margin-bottom: 12px;
-      }
-      /* Set the width of the sidebar to 120px */
-      .w3-sidebar {
-        width: 120px;
-        background: #222;
-      }
-      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-      #main {
-        margin-left: 120px;
-      }
-      /* Remove margins from "page content" on small screens */
-      @media only screen and (max-width: 600px) {
-        #main {
-          margin-left: 0;
-        }
-      }
-    </style>
-  </head>
-  <body class="w3-black">
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-      <!-- Avatar image in top left corner -->
-      <img src="image.jpg" style="width: 100%" />
-      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-        <i class="fa fa-home w3-xxlarge"></i>
-        <p>HOME</p>
-      </a>
-      <a
-        href="#about"
-        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
-      >
-        <i class="fa fa-user w3-xxlarge"></i>
-        <p>ABOUT</p>
-      </a>
-      <a
-        href="#photos"
-        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
-      >
-        <i class="fa fa-eye w3-xxlarge"></i>
-        <p>CERTIFICATE</p>
-        
-      </a>
-      <a
-        href="#contact"
-        class="w3-bar-item w3-button w3-padding-large w3-hover-black"
-      >
-        <i class="fa fa-envelope w3-xxlarge"></i>
-        <p>CONTACT</p>
-      </a>
-    </nav>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#060816">
+<meta name="description" content="Nicky Ranjan — Business Ops Analyst | Product Operations | Analytics">
+<title>Nicky Ranjan | Business Ops Analyst</title>
 
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-      <div
-        class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small"
-      >
-        <a href="#" class="w3-bar-item w3-button" style="width: 25% !important"
-          >HOME</a
-        >
-        <a
-          href="#about"
-          class="w3-bar-item w3-button"
-          style="width: 25% !important"
-          >ABOUT</a
-        >
-        <a
-          href="#photos"
-          class="w3-bar-item w3-button"
-          style="width: 25% !important"
-          >ACHIEVEMENT</a
-        >
-        <a
-          href="#contact"
-          class="w3-bar-item w3-button"
-          style="width: 25% !important"
-          >CONTACT</a
-        >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+:root{
+  --bg:#060816;--bg2:#0a1022;--card:rgba(15,22,45,.68);--text:#f6f8ff;
+  --muted:#a8b0c7;--line:rgba(255,255,255,.10);--accent:#7c5cff;
+  --accent2:#00d9ff;--accent3:#ff4ecd;--success:#36f1a2;
+  --shadow:0 25px 80px rgba(0,0,0,.45);--radius:24px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Inter",sans-serif;color:var(--text);overflow-x:hidden;cursor:none;
+  background:radial-gradient(circle at 15% 10%,rgba(124,92,255,.13),transparent 28%),
+             radial-gradient(circle at 90% 25%,rgba(0,217,255,.10),transparent 25%),var(--bg);
+}
+body.no-scroll{overflow:hidden}
+a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{font:inherit}
+#progress{position:fixed;top:0;left:0;width:0;height:3px;z-index:9999;background:linear-gradient(90deg,var(--accent),var(--accent2),var(--accent3));box-shadow:0 0 18px var(--accent2)}
+#particles{position:fixed;inset:0;pointer-events:none;z-index:-2}
+.grid-bg{position:fixed;inset:0;z-index:-3;opacity:.28;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:60px 60px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+.orb{position:fixed;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:-2}
+.orb.one{width:260px;height:260px;background:rgba(124,92,255,.15);top:10%;left:-100px;animation:float 10s ease-in-out infinite}
+.orb.two{width:300px;height:300px;background:rgba(0,217,255,.10);right:-120px;top:45%;animation:float 12s ease-in-out infinite reverse}
+@keyframes float{50%{transform:translate(40px,50px) scale(1.08)}}
+
+#loader{position:fixed;inset:0;background:#050711;z-index:10000;display:grid;place-items:center;transition:.7s ease}
+.loader-inner{text-align:center}.loader-logo{width:74px;height:74px;border:2px solid rgba(255,255,255,.15);border-top-color:var(--accent2);border-right-color:var(--accent);border-radius:50%;animation:spin 1s linear infinite;margin:auto;display:grid;place-items:center;font-family:"Space Grotesk";font-weight:700}
+.loader-text{margin-top:18px;color:var(--muted);font-size:12px;letter-spacing:4px}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.cursor,.cursor-dot{position:fixed;pointer-events:none;border-radius:50%;z-index:10001;transform:translate(-50%,-50%)}
+.cursor{width:34px;height:34px;border:1px solid rgba(0,217,255,.65);transition:width .2s,height .2s,border .2s}
+.cursor-dot{width:5px;height:5px;background:#fff;box-shadow:0 0 12px var(--accent2)}
+body.hovering .cursor{width:58px;height:58px;border-color:var(--accent);background:rgba(124,92,255,.07)}
+
+.nav{position:fixed;top:18px;left:50%;transform:translateX(-50%);width:min(1100px,calc(100% - 30px));z-index:500;background:rgba(8,12,28,.62);backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:20px;box-shadow:0 12px 40px rgba(0,0,0,.2)}
+.nav-inner{height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 18px}
+.brand{font-family:"Space Grotesk";font-size:20px;font-weight:700;display:flex;align-items:center;gap:10px}
+.brand-mark{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 0 25px rgba(124,92,255,.3)}
+.nav-links{display:flex;gap:4px;align-items:center}
+.nav-links a{padding:11px 14px;border-radius:12px;color:var(--muted);font-size:13px;transition:.25s}
+.nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(255,255,255,.07)}
+.menu-btn{width:42px;height:42px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.04);color:#fff;display:none;place-items:center;cursor:none}
+
+main{width:min(1180px,calc(100% - 34px));margin:auto}
+section{padding:115px 0 40px;position:relative}
+.section-kicker{color:var(--accent2);font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.section-title{font-family:"Space Grotesk";font-size:clamp(34px,5vw,62px);line-height:1.02;margin-bottom:16px}
+.section-title span{background:linear-gradient(90deg,#fff,var(--accent2),var(--accent3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.section-desc{color:var(--muted);max-width:720px;line-height:1.8}
+
+#home{min-height:100vh;display:flex;align-items:center;padding-top:140px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;width:100%}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;color:#dce3f8;background:rgba(255,255,255,.035);font-size:12px;margin-bottom:22px}
+.pulse{width:8px;height:8px;background:var(--success);border-radius:50%;box-shadow:0 0 0 0 rgba(54,241,162,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.hero h1{font-family:"Space Grotesk";font-size:clamp(50px,7.5vw,94px);line-height:.92;letter-spacing:-5px;margin-bottom:22px}
+.gradient-text{background:linear-gradient(90deg,var(--accent2),#fff 40%,var(--accent3));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:gradientMove 5s linear infinite}
+@keyframes gradientMove{to{background-position:200% center}}
+.typing{font-size:clamp(18px,2.5vw,28px);font-weight:600;color:#dbe3fa;min-height:38px}
+.typing .typed{color:var(--accent2)}
+.hero-copy{color:var(--muted);line-height:1.8;max-width:650px;margin:22px 0 30px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 20px;border-radius:14px;border:1px solid var(--line);font-size:13px;font-weight:700;transition:transform .25s,box-shadow .25s,background .25s;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(0,0,0,.25)}
+.btn-primary{background:linear-gradient(135deg,var(--accent),#4d7cff);border-color:transparent}.btn-secondary{background:rgba(255,255,255,.04)}
+.hero-socials{display:flex;gap:16px;margin-top:28px;color:var(--muted)}
+.hero-socials a{width:38px;height:38px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;transition:.25s}
+.hero-socials a:hover{color:#fff;border-color:var(--accent2);transform:translateY(-4px)}
+
+.hero-visual{position:relative;display:grid;place-items:center;min-height:520px}
+.profile-wrap{position:relative;width:min(390px,85vw);aspect-ratio:1}
+.profile-ring{position:absolute;inset:-12px;border-radius:50%;background:conic-gradient(from 0deg,var(--accent),var(--accent2),var(--accent3),var(--accent));animation:spin 9s linear infinite;filter:drop-shadow(0 0 35px rgba(124,92,255,.3))}
+.profile-ring::after{content:"";position:absolute;inset:4px;background:var(--bg);border-radius:50%}
+.profile-photo{position:absolute;inset:12px;border-radius:50%;overflow:hidden;border:2px solid rgba(255,255,255,.16);z-index:2;background:#111827}
+.profile-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.floating-card{position:absolute;z-index:4;background:rgba(12,18,38,.82);backdrop-filter:blur(15px);border:1px solid var(--line);border-radius:16px;padding:14px 16px;box-shadow:var(--shadow);animation:bob 4s ease-in-out infinite}
+.floating-card strong{display:block;font-size:18px}.floating-card span{font-size:11px;color:var(--muted)}
+.fc-one{left:-15px;top:55px}.fc-two{right:-15px;bottom:80px;animation-delay:-2s}
+@keyframes bob{50%{transform:translateY(-12px)}}
+.orbit{position:absolute;inset:-65px;border:1px dashed rgba(255,255,255,.12);border-radius:50%;animation:spin 18s linear infinite}.orbit-dot{position:absolute;width:11px;height:11px;background:var(--accent2);border-radius:50%;top:8%;left:14%;box-shadow:0 0 20px var(--accent2)}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:45px}
+.stat{padding:22px;border:1px solid var(--line);background:rgba(255,255,255,.035);border-radius:18px;text-align:center}
+.stat strong{font-family:"Space Grotesk";font-size:32px}.stat span{display:block;color:var(--muted);font-size:10px;margin-top:5px;letter-spacing:1px}
+
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:start}
+.about-card{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,rgba(124,92,255,.08),rgba(255,255,255,.025));box-shadow:var(--shadow)}
+.about-card p{color:var(--muted);line-height:1.9;font-size:14px}.mini-title{font-family:"Space Grotesk";font-size:20px;margin-bottom:15px}
+.info-list{list-style:none;margin-top:25px;display:grid;gap:12px}.info-list li{display:flex;gap:10px;color:var(--muted);font-size:13px}.info-list i{color:var(--accent2);width:18px}
+.timeline{margin-top:28px;position:relative;padding-left:25px}.timeline::before{content:"";position:absolute;left:5px;top:0;bottom:0;width:1px;background:linear-gradient(var(--accent2),var(--accent),transparent)}
+.timeline-item{position:relative;padding:0 0 28px}.timeline-item::before{content:"";position:absolute;left:-24px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--accent2);box-shadow:0 0 14px var(--accent2)}
+.timeline-date{font-size:10px;letter-spacing:1px;color:var(--accent2);text-transform:uppercase}.timeline-item h4{font-family:"Space Grotesk";font-size:18px;margin:5px 0}.timeline-item .company{font-size:12px;color:#dfe5f6}.timeline-item p{font-size:12px;line-height:1.7;color:var(--muted);margin-top:8px}
+
+.skills{display:grid;gap:14px}.skill-top{display:flex;justify-content:space-between;font-size:12px;color:#dce3f8;margin-bottom:8px}.skill-bar{height:8px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden}.skill-fill{width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--accent),var(--accent2));box-shadow:0 0 16px rgba(0,217,255,.25);transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.skill-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:25px}.tag{padding:8px 11px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.035);font-size:11px;color:#cbd3e9}
+
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:35px}
+.project{position:relative;overflow:hidden;min-height:290px;padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015));transform-style:preserve-3d;transition:border-color .3s,box-shadow .3s}
+.project::before{content:"";position:absolute;width:220px;height:220px;background:var(--accent);filter:blur(100px);opacity:.09;right:-90px;top:-90px}.project:hover{border-color:rgba(0,217,255,.35);box-shadow:0 25px 70px rgba(0,0,0,.25)}
+.project-icon{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;background:rgba(124,92,255,.13);color:var(--accent2);font-size:20px;margin-bottom:25px}
+.project h3{font-family:"Space Grotesk";font-size:23px;margin-bottom:12px}.project p{color:var(--muted);font-size:13px;line-height:1.8;min-height:92px}.project-footer{display:flex;align-items:center;justify-content:space-between;margin-top:18px;gap:12px}.project-stack{font-size:10px;color:#9ea8c2}.project-link{font-size:12px;color:#fff;display:inline-flex;align-items:center;gap:7px}
+
+.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:35px}.cert{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:rgba(255,255,255,.035);cursor:none;transition:.35s}.cert:hover{transform:translateY(-8px) scale(1.01);border-color:rgba(0,217,255,.4);box-shadow:var(--shadow)}.cert img{width:100%;height:310px;object-fit:contain;background:#0c1123;transition:.5s}.cert:hover img{transform:scale(1.04)}.cert-caption{padding:13px 16px;display:flex;justify-content:space-between;align-items:center;color:#dfe6f8;font-size:12px}.cert-caption i{color:var(--accent2)}
+
+.contact-box{margin-top:35px;padding:40px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(135deg,rgba(124,92,255,.10),rgba(0,217,255,.05));position:relative;overflow:hidden}.contact-box::after{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:var(--accent3);filter:blur(110px);opacity:.08;right:-100px;bottom:-100px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-item{display:flex;gap:15px;align-items:center;padding:17px;border:1px solid var(--line);border-radius:16px;background:rgba(0,0,0,.12)}.contact-item i{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.06);color:var(--accent2)}.contact-item small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}.contact-item span{font-size:12px;color:#e4e9f7;word-break:break-word}
+
+footer{padding:70px 0 30px;text-align:center;color:var(--muted)}.footer-socials{display:flex;justify-content:center;gap:10px;margin-bottom:25px}.footer-socials a{width:42px;height:42px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;transition:.25s}.footer-socials a:hover{background:var(--accent);color:#fff;transform:translateY(-5px)}footer p{font-size:11px}
+
+.reveal{opacity:0;transform:translateY(45px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.reveal.left{transform:translateX(-45px)}.reveal.right{transform:translateX(45px)}.reveal.show{opacity:1;transform:none}.delay-1{transition-delay:.1s}.delay-2{transition-delay:.2s}.delay-3{transition-delay:.3s}
+
+.modal{position:fixed;inset:0;background:rgba(2,4,12,.88);backdrop-filter:blur(14px);z-index:9000;display:none;place-items:center;padding:25px}.modal.open{display:grid;animation:fadeIn .3s ease}.modal img{max-width:min(1100px,94vw);max-height:86vh;object-fit:contain;border-radius:12px;box-shadow:0 30px 100px rgba(0,0,0,.6)}.modal-close{position:absolute;right:25px;top:20px;width:46px;height:46px;border:1px solid var(--line);background:rgba(255,255,255,.08);color:#fff;border-radius:50%;font-size:20px;cursor:none}@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+@media(max-width:850px){
+  body{cursor:auto}.cursor,.cursor-dot{display:none}.nav{top:10px}.nav-inner{height:60px}.menu-btn{display:grid}
+  .nav-links{display:none;position:absolute;left:0;right:0;top:70px;padding:10px;background:rgba(8,12,28,.95);backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:18px;flex-direction:column}
+  .nav-links.open{display:flex}.nav-links a{width:100%;text-align:center}.hero{grid-template-columns:1fr;text-align:center}.hero-visual{order:-1;min-height:390px}.profile-wrap{width:300px}.fc-one{left:-5px}.fc-two{right:-5px}.hero-copy{margin-left:auto;margin-right:auto}.hero-actions,.hero-socials{justify-content:center}.stats{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr}.projects-grid,.cert-grid{grid-template-columns:1fr}section{padding-top:90px}
+}
+@media(max-width:520px){main{width:min(100% - 22px,1180px)}.hero h1{font-size:52px;letter-spacing:-3px}.section-title{font-size:40px}.stats{gap:8px}.stat{padding:17px 10px}.stat strong{font-size:25px}.contact-box{padding:22px}.contact-item{padding:13px}.cert img{height:240px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}}
+</style>
+</head>
+
+<body>
+<div id="loader"><div class="loader-inner"><div class="loader-logo">NR</div><div class="loader-text">LOADING PORTFOLIO</div></div></div>
+<div id="progress"></div><div id="particles"></div><div class="grid-bg"></div><div class="orb one"></div><div class="orb two"></div>
+<div class="cursor"></div><div class="cursor-dot"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home"><span class="brand-mark">N</span>Nicky Ranjan</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#experience">Experience</a>
+      <a href="#skills">Skills</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</nav>
+
+<main>
+<section id="home">
+  <div class="hero">
+    <div class="reveal left">
+      <div class="eyebrow"><span class="pulse"></span> Business Ops Analyst • Physics Wallah</div>
+      <h1>I'm <span class="gradient-text">Nicky</span><br>Ranjan.</h1>
+      <div class="typing">I work on <span class="typed" id="typed"></span><span style="color:var(--accent2)">|</span></div>
+      <p class="hero-copy">
+        Product Ops & Analytics professional focused on product operations, stakeholder coordination,
+        data analysis, workflow optimization, dashboards, MIS reporting and data-driven decision-making.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary magnetic" href="#experience"><i class="fa-solid fa-briefcase"></i> View Experience</a>
+        <a class="btn btn-secondary magnetic" href="#contact"><i class="fa-regular fa-paper-plane"></i> Let's Connect</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/maxranjan" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nicky-ranjan-8991052a7/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/max__ranjan" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/918298663607" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
     </div>
-
-    <!-- Page Content -->
-    <div class="w3-padding-large" id="main">
-      <!-- Header/Home -->
-      <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-        <h1 class="w3-jumbo">
-          <span class="w3-hide-small">I'm</span> Nicky Ranjan
-        </h1>
-        <p>Full Stack Developer</p>
-        <img
-          src="image.jpg"
-          alt="boy"
-          class="w3-image"
-          width="992"
-          height="1108"
-        />
-      </header>
-
-      <!-- About Section -->
-      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-        <h2 class="w3-text-light-grey">Nicky Ranjan</h2>
-        <hr style="width: 200px" class="w3-opacity" />
-        <p>
-          I am Nicky Ranjan, I am a proficient Full Stack Developer with a strong
-          educational background and practical experience. He graduated with a
-          Bachelor of Computer Applications (BCA) from Bihar University,
-          achieving an impressive CGPA of 8.4. With six months of
-          hands-on experience at AppSquadz Software Pvt Ltd, I have honed 
-          skills in both front-end and back-end development, demonstrating a
-          keen ability to build comprehensive and efficient web applications.
-        </p>
-        <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-        
-        <p class="w3-wide">JAVA</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 90%"></div>
-        </div>
-
-        <p class="w3-wide">JDBC</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 85%"></div>
-        </div>
-
-        <p class="w3-wide">SERVLATE</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 95%"></div>
-        </div>
-
-        <p class="w3-wide">MYSQL & ORACLE</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 90%"></div>
-        </div>
-
-        <p class="w3-wide">XML</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 80%"></div>
-        </div>
-        
-        <p class="w3-wide">HIBERNATE</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 90%"></div>
-        </div>
-        <p class="w3-wide">SPRING</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 75%"></div>
-        </div>
-        
-        <p class="w3-wide">HTML</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 95%"></div>
-        </div>
-        <p class="w3-wide">CSS</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 95%"></div>
-        </div>
-        <p class="w3-wide">JAVASCRIPT</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 85%"></div>
-        </div>
-              <p class="w3-wide">REACT</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 70%"></div>
-        </div>
-        <p class="w3-wide">BOOTSTRAP</p>
-        <div class="w3-white">
-          <div class="w3-dark-grey" style="height: 28px; width: 75%"></div>
-        </div>
-        <br />
-        <button class="w3-button w3-light-grey w3-padding-large w3-section">
-          <i class="fa fa-download"></i><a href="#"> My Resume</a>
-        </button>
-
-        <!-- Grid for project tables -->
-        <h3 class="w3-padding-16 w3-text-light-grey">My Projects</h3>
-        <div class="w3-row-padding" style="margin: 0 -16px">
-          <div class="w3-half w3-margin-bottom">
-            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-              <li class="w3-dark-grey w3-xlarge w3-padding-32">CBSE WEB-APPLICATION</li>
-              <li class="w3-padding-16"> <b>CBSE WEBSITE </b> <br> In this Application we have use Java Servlet in back-end and For the GUI - HTML CSS AND JS. <br>Thankyou <br><br> <br><b>Click</b> <br> <a href="#">CBSE Website</a></li>
-            </li> 
-            </ul>
-          </div>
-          
-          <div class="w3-half">
-            <ul
-              class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-              <li class="w3-dark-grey w3-xlarge w3-padding-32">Hospital Management System</li>
-             <li class="w3-padding-16"> <b>Hospital Management System</b> <br> In this Application we have use Java in back-end and For the GUI - AWT - Swing. <br>Thankyou <br><br> <br><b>Click</b> <br> <a href="https://github.com/maxranjan/Hospital-Management-System">Hospital Management System</a></li>
-            </ul>
-          </div>
-
-
-          <!-- new  -->
-          <h3 class="w3-padding-16 w3-text-light-grey"></h3>
-          <div class="w3-row-padding" style="margin: 0 -10px">
-            <div class="w3-half w3-margin-bottom">
-              <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                <li class="w3-dark-grey w3-xlarge w3-padding-32">SHOPPING SITE</li>
-                <li class="w3-padding-16"> <b>SHOPPING SITE </b> <br> In this Application we have use Java Servlet in back-end and For the GUI - HTML CSS AND JS. <br>Thankyou <br><br> <br><b>Click</b> <br> <a href="#">SHOPPING SITE</a></li>
-              </li> 
-              </ul>
-            </div>
-
-            <div class="w3-half">
-            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-              <li class="w3-dark-grey w3-xlarge w3-padding-32">Photography Website</li>
-              <li class="w3-padding-16"><b>Photography Website</b> <br> This is a phtographer Website. In this Website we have use HTML, CSS and JavaScript.The main Purpose of build the website is Advertisement.For Grow Own Business. <br>Thankyou <br><br><b>Click</b> <br> <a href="https://maxranjan.github.io/Photography/">Max Photography  </a>  </li>
-              </li>
-            </ul>
-          </div>
-
-
-
-          
-          <!-- End Grid/Project table -->
-        </div>
-
-        <!-- Testimonials -->
-        <h3 class="w3-padding-24 w3-text-light-grey">Hobbies</h3>
-        <img
-          src="Photography.jpeg"
-          alt="Avatar"
-          class="w3-left w3-circle w3-margin-right"
-          style="width: 80px"/>
-        <p>
-          <span class="w3-large w3-margin-right">Photography</span> 
-        </p>
-        <p>Capture Memories.</p>
-        <br />
-
-        <img
-          src="Travel.jpeg"
-          alt="Avatar"
-          class="w3-left w3-circle w3-margin-right"
-          style="width: 80px"
-        />
-        <p>
-          <span class="w3-large w3-margin-right">Travel </span>
-        </p>
-        <p>Explore Every Places.</p>
-        <!-- End About Section -->
+    <div class="hero-visual reveal right">
+      <div class="profile-wrap">
+        <div class="orbit"><span class="orbit-dot"></span></div><div class="profile-ring"></div>
+        <div class="profile-photo"><img src="image.jpg" alt="Nicky Ranjan"></div>
+        <div class="floating-card fc-one"><strong>Analytics</strong><span>Data • KPI • Dashboards</span></div>
+        <div class="floating-card fc-two"><strong>Product Ops</strong><span>Jira • UAT • Agile</span></div>
       </div>
-
-      <!-- Portfolio Section -->
-      <div class="w3-padding-40 w3-content" id="photos">
-        <h2 class="w3-text-light-grey">Certificate</h2>
-        <hr style="width: 200px" class="w3-opacity" />
-
-        <!-- Grid for photos -->
-         
-         <div class="w3-row-padding" style="margin: 0 -16px">
-          <div class="w3-half">
-            <img
-              src="Certificate1.jpg"
-              style="width: 100%"
-            />
-           <img
-              src="Certificate 2.png"
-              style="width: 100%"
-            />
-          </div>
-
-           <div class="w3-half">
-            <img
-              src="Certificate 3.png"
-              style="width: 100%"
-            />
-
-            <img
-              src="Offer Letter.png"
-              style="width: 100%"
-            />
-          <!-- End photo grid -->
-        </div>
-        <!-- End Portfolio Section -->
-      </div>
-
-      <!-- Contact Section -->
-      <div class="w3-padding-40 w3-content w3-text-grey" id="contact">
-        <h2 class="w3-text-light-grey">Address</h2>
-        <hr style="width: 200px" class="w3-opacity" />
-
-        <div class="w3-section">
-          <p>
-            <i
-              class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"
-            ></i>
-            Vill + Post :- Chadhua, Turki, District :- Muzaffarpur, State:- Bihar (844127).
-          </p>
-          <p>
-            <i
-              class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"
-            ></i>
-            Phone: +91 8298663607
-          </p>
-          <p>
-            <i
-              class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"
-            >
-            </i>
-            Email: nickyranjan07@gmail.com
-          </p>
-        </div>
-        <!-- <br />
-        <p>Let's get in touch. Send me a message: <b>(This Section is Under development)</b></p> -->
-
-        <!-- <form action="/action_page.php" target="_blank">
-          <p>
-            <input
-              class="w3-input w3-padding-16"
-              type="text"
-              placeholder="Name"
-              required
-              name="Name"
-            />
-          </p>
-          <p>
-            <input
-              class="w3-input w3-padding-16"
-              type="text"
-              placeholder="Email"
-              required
-              name="Email"
-            />
-          </p>
-          <p>
-            <input
-              class="w3-input w3-padding-16"
-              type="text"
-              placeholder="Subject"
-              required
-              name="Subject"
-            />
-          </p>
-          <p>
-            <input
-              class="w3-input w3-padding-16"
-              type="text"
-              placeholder="Message"
-              required
-              name="Message"
-            />
-          </p>
-          <p>
-            <button
-              class="w3-button w3-light-grey w3-padding-large"
-              type="submit"
-            >
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-            </button>
-          </p>
-        </form> -->
-        <!-- End Contact Section -->
-      </div>
-      <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-        <h2 class="w3-text-light-grey">Get in Touch</h2>
-        <hr style="width: 200px" class="w3-opacity" />
-       <a href="https://wa.me/+918298663607" target="_blank"> <i class="fa fa-whatsapp" aria-hidden="true" style="font-size: 50px;"></i></a>
-      </div>
-      
-      <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-      <footer class="w3-content w3-padding-40 w3-text-grey w3-xlarge">
-        <a href="https://www.facebook.com/nicky.ranjan.77" class="facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-        <a href="https://github.com/maxranjan" class="github"> <i class="fa fa-github w3-hover-opacity" style="font-size:26px"> </i></a>
-        <a href="https://instagram.com/max__ranjan" class="instagram"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
-        <a href="https://snapchat.com/t/t2m4m6U3" class="snapchat"> <i class="fa fa-snapchat w3-hover-opacity"></i></a>
-       <a href="https://instagram.com/max__ranjan" class="instagram"></a> <a href="https://www.linkedin.com/in/nicky-ranjan-8991052a7/?originalSubdomain=in" class="linkedin"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
-        <p class="w3-small">
-          This website is Under development. and All Rights Reserved By Nicky Ranjan.
-        </p>
-        <!-- End footer -->
-      </footer>
-
-      <!-- END PAGE CONTENT -->
     </div>
-  </body>
+  </div>
+</section>
+
+<div class="stats reveal">
+  <div class="stat"><strong class="counter" data-target="7">0</strong><span>ANALYTICS & DATA SKILLS</span></div>
+  <div class="stat"><strong class="counter" data-target="5">0</strong><span>PRODUCT OPS AREAS</span></div>
+  <div class="stat"><strong class="counter" data-target="3">0</strong><span>CERTIFICATIONS</span></div>
+  <div class="stat"><strong class="counter" data-target="2">0</strong><span>PROFESSIONAL ROLES</span></div>
+</div>
+
+<section id="about">
+  <div class="section-kicker reveal">01 / About Me</div>
+  <h2 class="section-title reveal">Turning data into <span>business action.</span></h2>
+  <p class="section-desc reveal">A portfolio aligned with my current Product Operations, Business Analytics and stakeholder-management career path.</p>
+  <div class="about-grid" style="margin-top:35px">
+    <div class="about-card reveal left">
+      <div class="mini-title">Professional Summary</div>
+      <p>
+        Product Ops & Analytics professional with experience in product operations, stakeholder coordination,
+        data analysis and campaign management. Skilled in Advanced Excel, SQL, Google Sheets and Jira,
+        with a focus on workflow optimization, reporting, KPI tracking and data-driven decision-making.
+      </p>
+      <ul class="info-list">
+        <li><i class="fa-solid fa-graduation-cap"></i> BCA — CGPA 8.42</li>
+        <li><i class="fa-solid fa-chart-line"></i> Product Operations & Analytics</li>
+        <li><i class="fa-solid fa-database"></i> SQL • MySQL • Excel • Google Sheets</li>
+        <li><i class="fa-solid fa-location-dot"></i> Noida, India</li>
+      </ul>
+    </div>
+    <div class="about-card reveal right">
+      <div class="mini-title">What I Bring</div>
+      <div class="skills">
+        <div class="skill"><div class="skill-top"><span>Product Operations</span><b>90%</b></div><div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>Data Analysis</span><b>90%</b></div><div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>Advanced Excel</span><b>90%</b></div><div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>SQL / MySQL</span><b>85%</b></div><div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>Dashboard & KPI Reporting</span><b>88%</b></div><div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div></div>
+        <div class="skill"><div class="skill-top"><span>Stakeholder Coordination</span><b>90%</b></div><div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+      </div>
+      <div class="skill-tags">
+        <span class="tag">Jira</span><span class="tag">Agile</span><span class="tag">Scrum</span><span class="tag">UAT</span>
+        <span class="tag">Figma</span><span class="tag">AI Tools</span><span class="tag">ChatGPT</span><span class="tag">Cursor</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-kicker reveal">02 / Experience</div>
+  <h2 class="section-title reveal">My professional <span>journey.</span></h2>
+  <p class="section-desc reveal">A timeline of my professional experience, including the latest role that is not yet reflected in the uploaded resume.</p>
+
+  <div class="about-card reveal" style="margin-top:35px">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">July 2026 — Present</div>
+        <h4>Business Ops Analyst</h4>
+        <div class="company">Physics Wallah (PW) • Noida / India</div>
+        <p>
+          Business Operations Analytics role focused on operational data, reporting, dashboarding,
+          business insights, cross-functional coordination and process/workflow support.
+          <br><strong style="color:#fff">Current role added based on the user's update; it is not listed in the uploaded resume.</strong>
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">Nov 2024 — July 2026</div>
+        <h4>Associate – Product & Analyst</h4>
+        <div class="company">Paytm • Noida, Sector 98, India</div>
+        <p>
+          Collaborated with product, engineering and design teams on product operations, stakeholder coordination,
+          workflow optimization and Agile project execution using Jira. Analyzed revenue, operational and campaign
+          performance data using Advanced Excel and Google Sheets; created dashboards, MIS reports and KPI trackers.
+          Coordinated requirements, UAT, product implementation and digital campaign optimization across Google Ads and Meta Ads.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">May 2024 — Oct 2024</div>
+        <h4>Internship</h4>
+        <div class="company">CodeSquadz • Noida, Sector 62, India</div>
+        <p>
+          Developed and supported web application features using HTML, CSS, Java and MySQL.
+          Worked on database management, SQL querying, data handling, debugging, testing and feature implementation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-kicker reveal">03 / Skills</div>
+  <h2 class="section-title reveal">A toolkit built for <span>operations & analytics.</span></h2>
+  <div class="projects-grid">
+    <article class="project tilt reveal delay-1">
+      <div class="project-icon"><i class="fa-solid fa-diagram-project"></i></div>
+      <h3>Product Operations</h3>
+      <p>Product Operations, Product Lifecycle Management, Requirement Gathering, Stakeholder Management, UAT Coordination, Agile, Scrum, Workflow Optimization and Product Documentation.</p>
+      <div class="project-footer"><span class="project-stack">JIRA • AGILE • UAT • SCRUM</span></div>
+    </article>
+    <article class="project tilt reveal delay-2">
+      <div class="project-icon"><i class="fa-solid fa-chart-column"></i></div>
+      <h3>Analytics & Data</h3>
+      <p>Advanced Excel, Data Analysis, Revenue Analysis, SQL, MySQL, Google Sheets, Data Reporting, Dashboard Creation, Business Analysis and KPI Tracking.</p>
+      <div class="project-footer"><span class="project-stack">EXCEL • SQL • MYSQL • KPI</span></div>
+    </article>
+    <article class="project tilt reveal delay-1">
+      <div class="project-icon"><i class="fa-solid fa-code"></i></div>
+      <h3>Data & Technical</h3>
+      <p>HTML, CSS, JavaScript, Basic Java, Database Management, Figma and AI-assisted productivity tools including ChatGPT and Cursor.</p>
+      <div class="project-footer"><span class="project-stack">HTML • CSS • JS • FIGMA • AI</span></div>
+    </article>
+    <article class="project tilt reveal delay-2">
+      <div class="project-icon"><i class="fa-solid fa-bullhorn"></i></div>
+      <h3>Marketing & Growth</h3>
+      <p>Google Ads, Meta Ads, Campaign Optimization, Performance Marketing, User Engagement and Digital Marketing Analytics.</p>
+      <div class="project-footer"><span class="project-stack">GOOGLE ADS • META ADS</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="certificates">
+  <div class="section-kicker reveal">04 / Certifications</div>
+  <h2 class="section-title reveal">Learning that keeps <span>moving forward.</span></h2>
+  <p class="section-desc reveal">Certifications listed in the current resume. Click an image to open the full-screen viewer.</p>
+  <div class="cert-grid">
+    <div class="cert reveal delay-1" data-image="Certificate1.jpg"><img src="Certificate1.jpg" alt="Certificate 1"><div class="cert-caption"><span>Agile Scrum Master Certification</span><i class="fa-solid fa-expand"></i></div></div>
+    <div class="cert reveal delay-2" data-image="Certificate 2.png"><img src="Certificate 2.png" alt="Certificate 2"><div class="cert-caption"><span>AI-Powered Performance Ads Certification</span><i class="fa-solid fa-expand"></i></div></div>
+    <div class="cert reveal delay-1" data-image="Certificate 3.png"><img src="Certificate 3.png" alt="Certificate 3"><div class="cert-caption"><span>Front-End Development Certification</span><i class="fa-solid fa-expand"></i></div></div>
+    <div class="cert reveal delay-2" data-image="Offer Letter.png"><img src="Offer Letter.png" alt="Offer Letter"><div class="cert-caption"><span>Professional Experience Document</span><i class="fa-solid fa-expand"></i></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-kicker reveal">05 / Beyond Work</div>
+  <h2 class="section-title reveal">A little bit of <span>life outside analytics.</span></h2>
+  <div class="projects-grid">
+    <div class="project tilt reveal left">
+      <div class="project-icon"><i class="fa-solid fa-camera-retro"></i></div>
+      <h3>Photography</h3>
+      <p>Capture Memories.</p>
+      <img src="Photography.jpeg" alt="Photography" style="margin-top:18px;width:72px;height:72px;object-fit:cover;border-radius:16px">
+    </div>
+    <div class="project tilt reveal right">
+      <div class="project-icon"><i class="fa-solid fa-plane-departure"></i></div>
+      <h3>Travel</h3>
+      <p>Explore Every Places.</p>
+      <img src="Travel.jpeg" alt="Travel" style="margin-top:18px;width:72px;height:72px;object-fit:cover;border-radius:16px">
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-kicker reveal">06 / Contact</div>
+  <h2 class="section-title reveal">Let's connect & <span>build better.</span></h2>
+  <p class="section-desc reveal">For opportunities, collaborations, analytics projects or professional conversations, reach out through the channels below.</p>
+  <div class="contact-box reveal">
+    <div class="contact-grid">
+      <a class="contact-item magnetic" href="tel:+918298663607"><i class="fa-solid fa-phone"></i><div><small>Phone</small><span>+91 8298663607</span></div></a>
+      <a class="contact-item magnetic" href="mailto:nickyranjan07@gmail.com"><i class="fa-solid fa-envelope"></i><div><small>Email</small><span>nickyranjan07@gmail.com</span></div></a>
+      <a class="contact-item magnetic" href="https://wa.me/918298663607" target="_blank"><i class="fa-brands fa-whatsapp"></i><div><small>WhatsApp</small><span>Chat with me</span></div></a>
+      <div class="contact-item"><i class="fa-solid fa-location-dot"></i><div><small>Location</small><span>Noida, Sector 48, 201303</span></div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-socials">
+    <a href="https://www.facebook.com/nicky.ranjan.77" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://github.com/maxranjan" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://instagram.com/max__ranjan" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://snapchat.com/t/t2m4m6U3" target="_blank"><i class="fa-brands fa-snapchat"></i></a>
+    <a href="https://www.linkedin.com/in/nicky-ranjan-8991052a7/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+  <p>© <span id="year"></span> Nicky Ranjan. Business Ops • Product Operations • Analytics.</p>
+</footer>
+</main>
+
+<div class="modal" id="certModal"><button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button><img id="modalImage" src="" alt="Certificate preview"></div>
+
+<script>
+window.addEventListener("load",()=>{
+  setTimeout(()=>{
+    document.getElementById("loader").style.opacity="0";
+    setTimeout(()=>document.getElementById("loader").remove(),700);
+    document.querySelectorAll(".reveal").forEach((el,i)=>setTimeout(()=>el.classList.add("show"),Math.min(i*35,700)));
+  },450);
+});
+
+const cursor=document.querySelector(".cursor"),dot=document.querySelector(".cursor-dot");
+let mx=innerWidth/2,my=innerHeight/2,cx=mx,cy=my;
+addEventListener("mousemove",e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+"px";dot.style.top=my+"px"});
+(function loop(){cx+=(mx-cx)*.15;cy+=(my-cy)*.15;cursor.style.left=cx+"px";cursor.style.top=cy+"px";requestAnimationFrame(loop)})();
+document.querySelectorAll("a,button,.cert,.project").forEach(el=>{
+  el.addEventListener("mouseenter",()=>document.body.classList.add("hovering"));
+  el.addEventListener("mouseleave",()=>document.body.classList.remove("hovering"));
+});
+
+const menuBtn=document.getElementById("menuBtn"),navLinks=document.getElementById("navLinks");
+menuBtn.addEventListener("click",()=>navLinks.classList.toggle("open"));
+navLinks.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>navLinks.classList.remove("open")));
+
+const progress=document.getElementById("progress");
+const sections=[...document.querySelectorAll("main section[id]")];
+addEventListener("scroll",()=>{
+  const h=document.documentElement.scrollHeight-innerHeight;
+  progress.style.width=(scrollY/h*100)+"%";
+  let current="home";sections.forEach(s=>{if(scrollY>=s.offsetTop-180)current=s.id});
+  document.querySelectorAll(".nav-links a").forEach(a=>a.classList.toggle("active",a.getAttribute("href")==="#"+current));
+},{passive:true});
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+      entry.target.querySelectorAll?.(".skill-fill").forEach(bar=>bar.style.width=bar.dataset.width);
+    }
+  });
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+
+const words=["business operations.","data-driven decisions.","product workflows.","KPI dashboards.","analytics & insights."];
+const typed=document.getElementById("typed");let wi=0,ci=0,deleting=false;
+function type(){
+  const word=words[wi];typed.textContent=deleting?word.slice(0,ci--):word.slice(0,ci++);
+  let delay=deleting?45:82;
+  if(!deleting&&ci>word.length){deleting=true;delay=1200}
+  if(deleting&&ci<0){deleting=false;wi=(wi+1)%words.length;ci=0;delay=300}
+  setTimeout(type,delay);
+} type();
+
+const counters=document.querySelectorAll(".counter");
+const counterObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(!entry.isIntersecting||entry.target.dataset.done)return;
+    entry.target.dataset.done="1";const target=+entry.target.dataset.target;let start=0;
+    const tick=()=>{start+=Math.ceil(target/35);if(start>target)start=target;entry.target.textContent=start+"+";if(start<target)requestAnimationFrame(tick)};tick();
+  });
+},{threshold:.8});
+counters.forEach(c=>counterObserver.observe(c));
+
+document.querySelectorAll(".tilt").forEach(card=>{
+  card.addEventListener("mousemove",e=>{
+    if(innerWidth<850)return;const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+    card.style.transform=`perspective(900px) rotateX(${-y*7}deg) rotateY(${x*7}deg) translateY(-5px)`;
+  });
+  card.addEventListener("mouseleave",()=>card.style.transform="");
+});
+document.querySelectorAll(".magnetic").forEach(el=>{
+  el.addEventListener("mousemove",e=>{
+    if(innerWidth<850)return;const r=el.getBoundingClientRect(),x=(e.clientX-r.left-r.width/2)*.15,y=(e.clientY-r.top-r.height/2)*.15;
+    el.style.transform=`translate(${x}px,${y}px)`;
+  });
+  el.addEventListener("mouseleave",()=>el.style.transform="");
+});
+
+const canvas=document.createElement("canvas");document.getElementById("particles").appendChild(canvas);const ctx=canvas.getContext("2d");
+let particles=[];
+function resizeCanvas(){canvas.width=innerWidth;canvas.height=innerHeight}resizeCanvas();addEventListener("resize",resizeCanvas);
+function createParticles(){particles=Array.from({length:Math.min(75,Math.floor(innerWidth/18))},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,r:Math.random()*1.7+.3}))}createParticles();
+function drawParticles(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  for(let i=0;i<particles.length;i++){
+    const p=particles[i];p.x+=p.vx;p.y+=p.vy;if(p.x<0)p.x=innerWidth;if(p.x>innerWidth)p.x=0;if(p.y<0)p.y=innerHeight;if(p.y>innerHeight)p.y=0;
+    ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fillStyle="rgba(130,160,255,.42)";ctx.fill();
+    for(let j=i+1;j<particles.length;j++){const q=particles[j],dx=p.x-q.x,dy=p.y-q.y,d=Math.sqrt(dx*dx+dy*dy);if(d<115){ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.strokeStyle=`rgba(120,160,255,${.055*(1-d/115)})`;ctx.stroke()}}
+  }requestAnimationFrame(drawParticles);
+}drawParticles();
+
+const modal=document.getElementById("certModal"),modalImage=document.getElementById("modalImage");
+document.querySelectorAll(".cert").forEach(card=>card.addEventListener("click",()=>{modalImage.src=card.dataset.image;modal.classList.add("open");document.body.classList.add("no-scroll")}));
+function closeModal(){modal.classList.remove("open");document.body.classList.remove("no-scroll");modalImage.src=""}
+document.getElementById("modalClose").addEventListener("click",closeModal);modal.addEventListener("click",e=>{if(e.target===modal)closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
 </html>
